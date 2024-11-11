@@ -4,32 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meron Weldselase - My Journey in Web Development</title>
-    <style>
-        
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-
-            display: inline;
-            margin-right: 15px;
-        }
-    </style>
+    <!-- Link to table-specific CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Page Header -->
     <header>
         <h1>Welcome to My Journey in Web Development</h1>
     </header>
-    
+
+    <!-- Site Navigation Menu -->
     <nav>
         <ul>
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#my-avatar">My Avatar</a></li>
-            <li><a href="#itse-1301">What I Have Learned in ITSE 1301</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
         </ul>
     </nav>
-    
+
+    <!-- List of Page Sections -->
+    <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#my-avatar">My Avatar</a></li>
+        <li><a href="#itse-1301">What I Have Learned in ITSE 1301</a></li>
+        <li><a href="#table-section">Course Highlights</a></li>
+    </ul>
+
     <main>
         <!-- About Me Section -->
         <section id="about-me">
@@ -41,7 +42,7 @@
 
         <!-- My Avatar Section -->
         <section id="my-avatar">
-            <h2>My Avatar: Lunaris, The Starbound Seeker</h2>
+           <h2>My Avatar: Lunaris, The Starbound Seeker</h2>
             <p>Let me introduce you to my avatar, Lunaris. Known as the "Starbound Seeker," Lunaris is a celestial wanderer, traveling through the cosmos in search of knowledge and mystery. This character embodies traits of resilience, curiosity, and wisdom, which I <em>admire</em> and strive to emulate in my journey as a Computer Science student.</p>
             <p>According to legend, Lunaris was born from a supernova, a brilliant explosion that lit up the galaxy. Since that cosmic event, Lunaris has been on an endless quest, using an enchanted Astral Compass to guide them to distant galaxies where rare knowledge and artifacts await discovery. Their cloak shimmers like a nebula, symbolizing the endless depths of space and the infinite paths that knowledge can take. Lunaris reminds me that, like the universe, learning is boundless, and there is always something new to explore.</p>
             <p>Lunaris’s journey parallels my own experiences in web development, where I am constantly learning new concepts, facing challenges, and growing my skills. With Lunaris as my avatar, I feel inspired to push beyond my limits, embrace curiosity, and remember that every step, no matter how small, is part of a greater journey toward becoming a developer.</p>
@@ -54,10 +55,56 @@
             <p>One of the key lessons in this class has been the importance of semantic HTML tags like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>. These tags not only improve the structure of the web page but also enhance accessibility, making it easier for screen readers and search engines to understand the content. I am also learning how to use inline elements like <em>emphasis</em> and <strong>strong</strong> to make certain parts of text stand out, adding meaning and readability to the content.</p>
             <p>This class has also introduced me to the importance of writing clean, well-formatted code. We use tools to validate our HTML code to ensure that it follows web standards and displays correctly across browsers. Each assignment brings new insights, and I am excited to continue building on these foundational skills, which are essential for creating user-friendly, well-structured websites.</p>
         </section>
+
+        <!-- Course Highlights Table Section -->
+        <section id="table-section">
+            <h2>Course Highlights</h2>
+            <table>
+                <caption>ITSE 1301 Course Highlights</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Key Takeaways</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML Basics</td>
+                        <td>Learned the fundamental structure of an HTML document</td>
+                        <td>Structured pages with semantic tags</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Fundamentals</td>
+                        <td>Basic styling to enhance page presentation</td>
+                        <td>Understanding selectors, classes, and ids</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript Introduction</td>
+                        <td>Introduction to JavaScript and basic functions</td>
+                        <td>Improved page interactivity</td>
+                    </tr>
+                    <tr>
+                        <td>File Management</td>
+                        <td>Organizing files and directories for easy access</td>
+                        <td>Following naming conventions and best practices</td>
+                    </tr>
+                    <tr>
+                        <td>Web Accessibility</td>
+                        <td>Ensuring content is accessible for all users</td>
+                        <td>Improved design for screen readers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
+    <!-- Footer with External Links -->
     <footer>
         <p>&copy; 2024 Meron Weldselase</p>
+        <p><a href="https://www.dallascollege.edu" target="_blank">Dallas College</a></p>
+        <p><a href="mailto:webmaster@gmail.com">Email the Webmaster</a></p>
     </footer>
+
 </body>
 </html>
