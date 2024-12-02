@@ -6,6 +6,9 @@ body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header Styles */
@@ -19,7 +22,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: right; /* Align navigation to the left */
+    text-align: right;
 }
 
 .nav li {
@@ -45,21 +48,20 @@ h1 {
 /* Avatar Row */
 .avatar-row {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between avatars */
+    justify-content: center; /* Center the avatars within the row */
+    gap: 20px; /* Add space between the columns */
     margin: 20px;
     padding: 10px;
 }
 
-/* Individual Avatar Figure */
-figure {
+.avatar-row figure {
     text-align: center;
-    width: 300px; /* Width for consistency */
+    flex: 1; /* Ensure equal width columns */
+    max-width: 300px; /* Limit the width of each column */
 }
 
 .thumbnail {
-    width: 100%; /* Thumbnail fits within the figure */
-    max-width: 300px;
+    width: 100%; /* Ensure the image fits within the column */
     border: 2px solid #ccc;
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
@@ -76,21 +78,66 @@ figcaption {
     margin-top: 10px;
 }
 
+/* Form Styles */
+.contact-form {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    color: #663399;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select,
+.contact-form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #663399;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #4e2972;
+}
+
 /* Footer Styles */
 .footer {
     background-color: #222;
     text-align: center;
     color: white;
     padding: 10px 0;
-    position: relative;
-    bottom: 0;
+    margin-top: auto; /* Ensures footer sticks to bottom */
     width: 100%;
 }
 
-.footer p a {
-    color: white;
-}
-
-.footer p a:hover {
-    color: #0080ff;
+.footer p {
+    margin: 0;
 }
