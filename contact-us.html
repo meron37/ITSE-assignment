@@ -6,11 +6,12 @@
     <meta name="description" content="Contact us to learn more about Lunaris.">
     <title>Contact Us - Lunaris</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
-        <nav class="nav">
+    <header class="main-header">
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -20,51 +21,51 @@
         </nav>
     </header>
 
+    <!-- Contact Form -->
     <h1>Contact Us</h1>
-    <main>
-        <form action="success.html" method="GET" class="contact-form">
-            <fieldset>
-                <legend>Contact Lunaris</legend>
-                <!-- Single Line Text Field -->
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+    <form action="mailto:hamelimalweldselase11@gmail.com" method="POST" enctype="text/plain">
+        <fieldset>
+            <legend>Contact Lunaris</legend>
 
-                <!-- Email Field -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+            <!-- Name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-                <!-- Multi-line Text Field -->
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-                <!-- Radio Buttons -->
-                <p>How did you hear about us?</p>
-                <label><input type="radio" name="source" value="search" required> social media</label><br>
-                <label><input type="radio" name="source" value="friend"> Friend</label><br>
-                <label><input type="radio" name="source" value="other"> Other</label><br><br>
+            <!-- Message -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
 
-                <!-- Checkboxes -->
-                <p>Select your interests:</p>
-                <label><input type="checkbox" name="interest" value="exploration"> Exploration</label><br>
-                <label><input type="checkbox" name="interest" value="discovery"> Discovery</label><br>
-                <label><input type="checkbox" name="interest" value="cosmic"> Cosmic Mysteries</label><br><br>
+            <!-- Radio Buttons -->
+            <p>How did you hear about us?</p>
+            <label><input type="radio" name="source" value="social_media" required> Social Media</label>
+            <label><input type="radio" name="source" value="friend"> Friend</label>
+            <label><input type="radio" name="source" value="other"> Other</label>
 
-                <!-- Dropdown Menu -->
-                <label for="preference">Preferred Contact Method:</label>
-                <select id="preference" name="preference" required>
-                    <option value="email">Email</option>
-                    <option value="phone">Phone</option>
-                </select><br><br>
+            <!-- Checkboxes -->
+            <p>Select your interests:</p>
+            <label><input type="checkbox" name="interest" value="exploration"> Exploration</label>
+            <label><input type="checkbox" name="interest" value="discovery"> Discovery</label>
+            <label><input type="checkbox" name="interest" value="cosmic"> Cosmic Mysteries</label>
 
-                <!-- Buttons -->
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-            </fieldset>
-        </form>
-    </main>
+            <!-- Dropdown -->
+            <label for="preference">Preferred Contact Method:</label>
+            <select id="preference" name="preference" required>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+            </select>
+
+            <!-- Buttons -->
+            <button type="submit" onclick="location.href='success.html';">Submit</button>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="main-footer">
         <p>&copy; 2024 Meron Weldselase</p>
     </footer>
 </body>
