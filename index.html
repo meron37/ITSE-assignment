@@ -6,12 +6,14 @@
     <meta name="description" content="Showcasing my avatar, Lunaris.">
     <title>My Avatar, Lunaris</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/layout.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <nav>
+        <img src="ava_image/avatarlogo.png" alt="Avatar Logo" class="site-logo">
+        <!-- Top Navigation Menu -->
+        <nav class="nav-header">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#my-avatar">My Avatar</a></li>
@@ -20,47 +22,64 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <h1>Welcome to My Avatar, Lunaris Showcase</h1>
-        
-        <!-- My Avatar Section -->
-        <section id="my-avatar">
-            <h2>My Avatar</h2>
-            <figure>
-                <a href="ava_image/avatar1.png" target="_blank">
-                    <img src="ava_image/avatar1.png" alt="Avatar, Lunaris: Celestial Wanderer">
-                </a>
-                <figcaption>
-                    As the Celestial Wanderer, Lunaris embodies the boundless curiosity and resilience of a cosmic traveler.
-                    Born from a supernova explosion, Lunaris explores the vast reaches of the universe, unraveling secrets of
-                    creation and existence. Their journey through the celestial realms is a metaphor for the quest for knowledge,
-                    reminding us that learning and discovery are infinite.
-                </figcaption>
-            </figure>
-            <figure>
-                <a href="ava_image/avatar2.png" target="_blank">
-                    <img src="ava_image/avatar2.png" alt="Avatar, Lunaris: Starbound Seeker">
-                </a>
-                <figcaption>
-                    As the Starbound Seeker, Lunaris is guided by an enchanted Astral Compass, navigating the stars in pursuit
-                    of hidden truths and universal mysteries. With a deep connection to the cosmic energy, Lunaris weaves glowing
-                    patterns of starlight, symbolizing their commitment to understanding the unknown and pushing the boundaries.
-                </figcaption>
-            </figure>
-            <figure>
-                <a href="ava_image/avatar3.png" target="_blank">
-                    <img src="ava_image/avatar3.png" alt="Avatar, Lunaris: Cosmic Explorer">
-                </a>
-                <figcaption>
-                    As the Cosmic Explorer, Lunaris stands confidently on a radiant platform of cosmic light, surrounded by a
-                    digital aura that symbolizes their adaptability and wisdom. Their journey through the stars reflects the
-                    importance of embracing change and discovering deeper truths. Lunaris inspires us to step boldly into the
-                    unknown with courage and vision.
-                </figcaption>
-            </figure>
-        </section>
-    </main>
+    <!-- Sticky Side Navigation Menu -->
+    <nav class="nav-sticky">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#my-avatar">My Avatar</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <div class="content-wrapper">
+        <!-- Main Section -->
+        <main class="main-content">
+            <h1>Welcome to My Avatar, Lunaris Showcase</h1>
+
+            <!-- Section 1 -->
+            <section class="content-box clearfix">
+                <figure class="figure-half">
+                    <img src="ava_image/avatar1.png" alt="">
+                    <figcaption>Lunaris: Celestial Wanderer</figcaption>
+                </figure>
+                <div class="text-half">
+                    <p>
+                        As the Celestial Wanderer, Lunaris embodies boundless curiosity and resilience. Born from a supernova,
+                        Lunaris explores the vast reaches of the universe, unraveling secrets of creation and existence.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="content-box clearfix">
+                <figure class="figure-half">
+                    <img src="ava_image/avatar2.png" alt="">
+                    <figcaption>Lunaris: Starbound Seeker</figcaption>
+                </figure>
+                <div class="text-half">
+                    <p>
+                        Guided by an enchanted Astral Compass, Lunaris navigates the stars in pursuit of hidden truths.
+                        Lunaris weaves glowing patterns of starlight, symbolizing their commitment to understanding the unknown.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section class="content-box clearfix">
+                <figure class="figure-half">
+                    <img src="ava_image/avatar3.png" alt="">
+                    <figcaption>Lunaris: Cosmic Explorer</figcaption>
+                </figure>
+                <div class="text-half">
+                    <p>
+                        As the Cosmic Explorer, Lunaris stands confidently on a radiant platform of cosmic light, surrounded
+                        by a digital aura. Their journey inspires bold exploration into the unknown with courage and vision.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
 
     <!-- Footer -->
     <footer>

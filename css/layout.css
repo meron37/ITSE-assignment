@@ -1,0 +1,132 @@
+/* General Box Styling for Sections */
+.content-box {
+    display: flex;
+    align-items: stretch; /* Ensures both image and text containers have the same height */
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    max-width: 75vw; /* Sets the width of the section */
+    height: 400px; /* Ensures all sections have the same height */
+}
+
+/* Floated Figures with Half Width */
+.figure-half {
+    width: 50%; /* Image container takes half of the section */
+    display: flex;
+    flex-direction: column; /* Ensures figcaption is below the image */
+    align-items: center; /* Centers the content */
+    justify-content: flex-start;
+    height: 100%; /* Matches the height of the content-box */
+}
+
+.figure-half img {
+    width: auto; /* Maintains aspect ratio */
+    height: 80%; /* Image height is half of the box */
+    border-radius: 5px;
+    object-fit: cover; /* Ensures proper scaling */
+}
+
+/* Figcaption Styling */
+.figure-half figcaption {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Text Content with Half Width */
+.text-half {
+    width: 50%; /* Text container takes the other half of the section */
+    padding-left: 20px;
+    display: flex; /* Ensures the text is vertically aligned */
+    align-items: center; /* Centers the text vertically */
+    justify-content: flex-start; /* Aligns the text to the left */
+}
+.text-half p{
+    margin-left: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #ECC06C;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.site-logo {
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+}
+
+/* Top Navigation Menu */
+.nav-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-header a {
+    color: #663399;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-header a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Sticky Side Navigation Menu */
+.nav-sticky {
+    position: sticky;
+    top: 10px; /* Keeps the menu 10px from the top of the viewport */
+    right: 0;
+    float: right;
+    width: 10%; /* Width of the sticky nav menu */
+    margin-top: 20px;
+    background-color: #f4f4f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 100; /* Ensures it stays above other content */
+}
+
+.nav-sticky ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Adds spacing between menu items */
+}
+
+.nav-sticky a {
+    color: #663399;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-sticky a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
