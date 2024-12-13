@@ -246,6 +246,10 @@ header {
     line-height: 1.5;
 }
 
+.self-intro{
+     margin-left: 50px;
+     padding-bottom: 70px;
+}
 /* Footer Styling */
 footer {
     background-color: #1e293b;
