@@ -248,7 +248,11 @@ header {
 
 .self-intro{
      margin-left: 50px;
-     padding-bottom: 70px;
+     padding-bottom: 50px;
+}
+.self-intro h1{
+font-weight: bold;
+font-size: 30px;
 }
 /* Footer Styling */
 footer {
